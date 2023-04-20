@@ -2,6 +2,10 @@ import express from "express"
 import { POKEMON } from "./pokemon.js"
 
 const app = express()
+app.use(logger)
+app.get("/", (req, res) => {
+  res.send(users)
+})
 
 app.get("/:id", (req, res) => {
     const reqId = parseInt(req.params.id)
