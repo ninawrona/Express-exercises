@@ -1,5 +1,6 @@
 import express from "express"
 import { POKEMON } from "./pokemon.js"
+import logger from "./logger.js"
 
 const app = express()
 app.use(logger)
