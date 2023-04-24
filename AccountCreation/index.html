@@ -1,0 +1,33 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Authentication Example</title>
+</head>
+
+<body>
+    <h2>Login</h2>
+    <input type="text" id="username" />
+    <input type="password" id="password" />
+    <button onclick="register()">Register</button>
+    <hr />
+    <script>
+        async function register() {
+            const username = document.querySelector("#username").value
+            const password = document.querySelector("#password").value
+            const response = await fetch("http://localhost:3000/signup", {
+                headers: { "Content-Type": "application/json" },
+                method: "POST",
+                body: JSON.stringify({ username, password }),
+            })
+            if (response.ok) {
+                alert("Registration successful!")
+            } else {
+                alert("Registration failed!")
+            }
+        }
+    </script>
+</body>
+
+</html> -->
